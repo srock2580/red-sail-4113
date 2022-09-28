@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 
 #header{
     height: 150px;
@@ -7,7 +13,7 @@
 #bonus{
 
     height: 200px;
-    width: 1459.2px;
+    width: 100%;
     margin: auto;
     display: flex;
     background-color: #eeeeee;
@@ -64,7 +70,7 @@ line-height: 23.94px;
 }
 
 #banner{
-    width: 1459.4px;
+    width: 100%;
     height: 550px;
     margin-top: 30px;
     margin: auto;
@@ -184,7 +190,7 @@ cursor: pointer;
 }
 #blog{
     height: 618px;
-    width: 1459.4px;
+    width: 100%px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -245,7 +251,7 @@ font-family: "Brandon text", Arial, sans-serif;
 
 #latinx{
     height: 816px;
-    width: 1459px;
+    width: 100%;
     margin: auto;
     margin-top: 15px;
 }
@@ -257,7 +263,7 @@ font-family: "Brandon text", Arial, sans-serif;
 #pick{
 
     height: 200px;
-    width: 1459.2px;
+    width: 100%;
     margin: auto;
     display: flex;
     background-color: #eeeeee;
