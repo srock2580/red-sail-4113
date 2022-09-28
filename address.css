@@ -1,0 +1,183 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo > img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.cart-image > img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-sec {
+  width: 65%;
+  border-top: 1px solid rgb(214, 214, 214);
+  border-right: 1px solid rgb(214, 214, 214);
+  padding: 10px 20px;
+}
+
+.right-sec {
+  width: 35%;
+  background-color: rgb(241, 241, 241);
+  border-top: 1px solid rgb(214, 214, 214);
+  padding: 10px 20px;
+}
+
+.left-title {
+  margin-bottom: 30px;
+}
+
+.lock-image {
+  width: 28px;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.title-para {
+  color: gray;
+}
+
+.already-para {
+  color: gray;
+  font-size: 15px;
+  margin-right: -5px;
+}
+
+.question-mark-image {
+  width: 15px;
+  margin-left: 5px;
+}
+
+.link {
+  color: rgb(0, 183, 255);
+}
+
+hr {
+  border: 1px solid rgb(214, 214, 214);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.delivery-sec {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.delivery-sec > img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.delivery-sec > span {
+  font-size: 18px;
+}
+
+#email,
+#address {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+#firstName,
+#lastName,
+#postalCode,
+#phone {
+  width: 47%;
+  padding: 10px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.name,
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.right-title > img {
+  width: 28px;
+  margin-right: 10px;
+}
+
+.right-title > span {
+  font-size: 25px;
+}
+
+.right-button, .left-button {
+  background-color: rgb(43, 43, 43);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right-button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.left-button {
+  width: 300px;
+  margin: auto;
+  display: block;
+}
+
+.items, .shipping, .taxes, .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items, .shipping, .taxes {
+  margin-bottom: 20px;
+}
+
+.inr {
+  font-size: small;
+}
+
+.rupee-image {
+  width: 10px;
+}
+
+.total-rupee-image {
+  width: 15px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .logo {
+        padding: 30px;
+      }
+
+      .logo > img {
+        width: 150px;
+      }
+
+      .checkout-sec {
+        width: 500px;
+        margin: auto;
+      }
+
+      .checkout-sec > h3 {
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+
+      .password-sec {
+        width: 100%;
+        background-color: rgb(59, 137, 255);
+        text-align: center;
+      }
+
+      .password-sec > input {
+        width: 45px;
+        padding: 5px 10px;
+        text-align: center;
+        margin: 0px 10px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        margin-top: 50px;
+      }
+
+      .password-sec > input[type="submit"] {
+        width: 50%;
+        margin-bottom: 50px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+      }
+
+      .password-sec > input[type="submit"]:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .password-sec > input[type="submit"]:active {
+        background-color: lavender;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="logo">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/2560px-PayPal_logo.svg.png"
+        alt=""
+      />
+    </div>
+
+    <div class="checkout-sec">
+      <h3>Checkout With PayPal</h3>
+
+      <form class="password-sec">
+        <input
+          type="text"
+          name=""
+          id="first"
+          maxlength="1"
+          oninput="getNum(this, 'second')"
+          required
+        />
+        <input
+          type="text"
+          name=""
+          id="second"
+          maxlength="1"
+          oninput="getNum(this, 'third')"
+          required
+        />
+        <input
+          type="text"
+          name=""
+          id="third"
+          maxlength="1"
+          oninput="getNum(this, 'forth')"
+          required
+        />
+        <input
+          type="text"
+          name=""
+          id="forth"
+          maxlength="1"
+          oninput="getNum(this, 'fifth')"
+          required
+        />
+        <input
+          type="text"
+          name=""
+          id="fifth"
+          maxlength="1"
+          oninput="getNum(this, 'submit')"
+          required
+        />
+
+        <input type="submit" name="" id="submit" />
+      </form>
+    </div>
+
+    <script>
+      const password = "12345";
+      let bag = "";
+
+      // fillng the input fields
+      const getNum = (current, next) => {
+        if (current.value.length) {
+          document.getElementById(next).focus();
+          bag += current.value;
+        }
+      };
+
+      const passwordSec = document.querySelector(".password-sec");
+      const paymentTitle = document.querySelector(".checkout-sec > h3");
+
+      // payment success
+      const paymentSuccess = () => {
+        passwordSec.innerHTML = "";
+        const image = document.createElement("img");
+        image.src = "https://c.tenor.com/xPh7mDqOZ8UAAAAM/success.gif";
+
+        passwordSec.append(image);
+        passwordSec.style.backgroundColor = "white";
+        paymentTitle.innerText = "Payment SuccessFul";
+      };
+
+      // payment failed
+      const paymentFalied = () => {
+        passwordSec.innerHTML = "";
+        const image = document.createElement("img");
+        image.src =
+          "https://cdn1.iconfinder.com/data/icons/payment-and-finance-flat/48/Wrong_password-128.png";
+
+        passwordSec.append(image);
+        passwordSec.style.backgroundColor = "white";
+        paymentTitle.innerText = "Wrong Password";
+      };
+
+      // click on submit button
+      document.querySelector("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const form = document.querySelector("form");
+
+        if (bag === password) paymentSuccess();
+        else paymentFalied();
+
+        form.first.value = "";
+        form.second.value = "";
+        form.third.value = "";
+        form.forth.value = "";
+        form.fifth.value = "";
+      });
+    </script>
+  </body>
+</html>
