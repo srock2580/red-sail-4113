@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .cart-container {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .cart-container > div > img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .cart-container > div > p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .cart-container > div > button {
+        padding: 2px 10px;
+        cursor: pointer;
+        background-color: lavender;
+        border: none;
+        border-radius: 3px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cart-container"></div>
+
+    <script>
+      const data = localStorage.getItem(JSON.parse("localData")) || [];
+      const cartContainer = document.querySelector(".cart-container");
+
+      const getLocalData = () => {
+        cartContainer.innerHTML = "";
+        data.forEach((element, index) => {
+          const imageTag = document.createElement("img");
+          const brandTag = document.createElement("h3");
+          const detailTag = document.createElement("p");
+          const priceTag = document.createElement("h4");
+          const removeButton = document.createElement("button");
+          const div = document.createElement("div");
+
+          imageTag.src = element.imageLink;
+          brandTag.innerText = element.brandName;
+          detailTag.innerText = element.productDetail;
+          priceTag.innerText = element.price;
+          removeButton.innerText = "Remove";
+
+          removeButton.addEventListener("click", () => {
+            removeItem(index);
+            getLocalData()
+          });
+
+          div.append(imageTag, brandTag, detailTag, priceTag, removeButton);
+          cartContainer.append(div);
+        });
+      };
+
+      function removeItem(index) {
+        data.splice(index, 1)
+        localStorage.setItem('localData', JSON.stringify(data))
+      }
+    </script>
+  </body>
+</html>
