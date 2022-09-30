@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nordstrom Online & In Store:Shoes, Jwellery,Clothing,Makeup,Dresses</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAicsdPJDcZp1DvnpaS6zb_1YzjIzlB4qAOQ&usqp=CAU">
     <style>
         #mid {
             display: flex;
@@ -89,23 +90,40 @@
             margin-top: 1%;
 
         }
-       #main{
-        /* display: flex; */
-        justify-content: space-between;
-       }
-       .over>div{
-        width:20%;
-        margin: auto;
-        margin-right: 5%;
-       }
-       .over>button{
-        width: 5%;
-        height: 5%;
-        border: none;
-        background-color: white;
-        cursor: pointer;
-        margin-top: 1%;
-       }
+
+        #main {
+            /* display: flex; */
+            justify-content: space-between;
+        }
+
+        .over>div {
+            width: 20%;
+            margin: auto;
+            margin-right: 5%;
+        }
+
+        .over>button {
+            width: 5%;
+            height: 5%;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            margin-top: 1%;
+        }
+
+        .over>div>h3,p {
+            cursor: pointer;
+            /* display: inline-block; */
+            /* color:black; */
+        }
+        .over>div>h3,p :hover{
+            cursor: pointer;
+            text-decoration-line: underline;
+        
+        }
+        .signDiv{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
     </style>
 </head>
 
@@ -125,7 +143,8 @@
                 <ion-icon id="lens" name="search-outline"></ion-icon>
                 <input id="input" type="text" placeholder="Search for products or brands">
             </div>
-            <span>Sign In <ion-icon name="chevron-down-outline"></ion-icon></span>
+            <span style="cursor:pointer;" id="signIn">Sign In <ion-icon name="chevron-down-outline"></ion-icon></span>
+            <div id="ss"></div>
             <span>
                 <ion-icon name="storefront-outline"></ion-icon> Stores
             </span>
@@ -141,88 +160,21 @@
     <hr>
     <div id="botDiv">
         <span id="sale" style="color: rgba(255, 0, 0, 0.98);cursor: pointer;">Sale</span>
-        <span>Women</span>
-        <span>Men</span>
-        <span>Kids</span>
-        <span>Young Adults</span>
-        <span>Activewear</span>
-        <span>Home</span>
-        <span>Beauty</span>
-        <span>Designer</span>
-        <span>Gifts</span>
-        <span>The Threads</span>
-        <span>Brands</span>
+        <span style="cursor:pointer;" id="women">Women</span>
+        <span style="cursor:pointer;" id="men">Men</span>
+        <span style="cursor:pointer;" id="kids">Kids</span>
+        <span style="cursor:pointer;" id="young">Young Adults</span>
+        <span style="cursor:pointer;" id="active">Activewear</span>
+        <span style="cursor:pointer;" id="home">Home</span>
+        <span style="cursor:pointer;" id="beauty">Beauty</span>
+        <span style="cursor:pointer;" id="design">Designer</span>
+        <span style="cursor:pointer;" id="gifts">Gifts</span>
+        <span style="cursor:pointer;" id="thread">The Threads</span>
+        <span style="cursor:pointer;" id="brands">Brands</span>
     </div>
     <div id="ap">
         <div id="main">
-            <!-- <div id="women">
-                <h3>women</h3>
-                <p>New Markdowns</p>
-                <p>Clothing</p>
-                <p>Shoes</p>
-                <p>Handbags & Wallets</p>
-                <p>Jewelry</p>
-                <p>Accessories</p>
-                <p>Beauty</p>
-                <p>Contemporary</p>
-                <p>Designer</p>
-                <p>Plus</p>
-                <p>Petite</p>
-                <p>Maternity</p>
-                <p>Juniors</p>
-            </div>
-
-            <div id="Men">
-                <h3>Men</h3>
-                <p>New Markdowns</p>
-                <p>Clothing</p>
-                <p>Shoes</p>
-                <p>Handbags & Wallets</p>
-                <p>Jewelry</p>
-                <p>Accessories</p>
-                <p>Beauty</p>
-                <p>Contemporary</p>
-                <p>Designer</p>
-                <p>Plus</p>
-                <p>Petite</p>
-                <p>Maternity</p>
-                <p>Juniors</p>
-            </div>
-
-            <div id="Kids">
-                <h3>Kids</h3>
-                <p>New Markdowns</p>
-                <p>Clothing</p>
-                <p>Shoes</p>
-                <p>Handbags & Wallets</p>
-                <p>Jewelry</p>
-                <p>Accessories</p>
-                <p>Beauty</p>
-                <p>Contemporary</p>
-                <p>Designer</p>
-                <p>Plus</p>
-                <p>Petite</p>
-                <p>Maternity</p>
-                <p>Juniors</p>
-            </div>
-
-            <div id="Home">
-                <h3>Home</h3>
-                <p>New Markdowns</p>
-                <p>Clothing</p>
-                <p>Shoes</p>
-                <p>Handbags & Wallets</p>
-                <p>Jewelry</p>
-                <p>Accessories</p>
-                <p>Beauty</p>
-                <p>Contemporary</p>
-                <p>Designer</p>
-                <p>Plus</p>
-                <p>Petite</p>
-                <p>Maternity</p>
-                <p>Juniors</p>
-            </div> -->
-            
+            <!-- Append Here -->
         </div>
     </div>
 </body>
@@ -231,3 +183,12 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="nav.js"></script>
+
+
+<!-- 
+    .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: 
+#0087ca;
+} -->
