@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 400px;
+            height: 1000px;
+            margin: auto;  
+        }
+        #temp_container{
+            width: 300px;
+            margin-left: 10px;
+        }
+        .templete_top{
+            display: flex;
+            height: 40px;
+        }
+
+        .temoplate_img_text{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+        .imgTxt{
+            margin-left: 10px;
+        }
+        #tickbox_div{
+            display: flex;
+            width: 200px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+        #tickbox_txt{
+            margin-left: 10px;
+        }
+
+        #tickbox{
+            margin-left: 5px;
+            margin-top: 15px;
+        }
+        .inp{
+            width: 350px;
+            height: 40px;
+            margin-top: -90px;
+        }
+        #inp_above_txt{
+            margin-top: 30px;
+        }
+        #txt_t_c{
+            width: 300px;
+        }
+        #create_btn{
+            width: 350px;
+            height: 50px;
+            margin-top: 10px;
+            background-color: black;
+            color: white;
+        }
+        a{
+         color: black;
+        }
+        #wallet_logo{
+           height: 20px; 
+        }
+        .templete_top_IMG{
+            display: flex;
+            margin-left: 5px;
+       
+            
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+
+    <div id="main_div">
+        <div id="container"> 
+    <h1>
+        Create Account
+    </h1>
+ <div id="temp_container">
+    <div class="templete_top_IMG">
+        <div><img id="wallet_logo" src="https://cdn3.iconfinder.com/data/icons/essential-pack/32/85-Wallet-256.png" alt="logo"></div>
+        <div class="temoplate_img_text"> <div class=" imgTxt">Check out faster</div></div>
+    </div>
+    <div class="templete_top">
+
+        <div class="temoplate_img_text"><svg width="26" height="16" focusable="false" class="ozePq"><g  stroke="#393939" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M6.998 11.372h9.64m3.86 0H23.5V7.924l-3.9-2.482L18.028.698H.5v10.674h2.63"></path><circle cx="5.068" cy="11.371" r="1.931"></circle><circle cx="18.568" cy="11.371" r="1.931"></circle></g></svg>
+            <div class="imgTxt">Track orders easily</div></div>  
+
+    </div>
+    <div class="templete_top">
+        <div class="temoplate_img_text"><svg width="24px" height="24px" focusable="false" class="ozePq"><path d="M19.942 11.07c-.459-3.702-3.61-6.57-7.436-6.57a7.5 7.5 0 0 0-6.878 4.512 5.243 5.243 0 0 0 .114 10.487v.001h13.526v-.002a4.24 4.24 0 0 0 .674-8.428z" fill="none" stroke="#393939" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M14.993 16.825V8.984h-1.164v4.87L9.25 8.825v7.805h1.161v-4.797l.042.045z" fill="#393939"></path></svg>
+            <div class=" imgTxt">Use one sign-in across our brands</div></div>
+    </div>
+</div>
+<div>
+    <p>*Required</p><span></span>
+</div>
+    <h4>Email</h4>
+    <span></span>
+
+
+    <form action="#">
+    <h3 id="inp_above_txt">First name</h3>
+    <input type="text" id="firstname" class="inp" placeholder="Enter Your First Name"/>
+
+    <h3>Last name</h3>
+    <input type="text" id="lastName" class="inp" placeholder="Enter Your Last Name"/>
+
+
+    <h3>Create password</h3>
+    <input type="password" id="password" class="inp" placeholder="Enter Your Password"/>
+
+    <div id="tickbox">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Keep me signed in.  <a href="#">Details</a></label><br>
+       
+    </div>
+    <div id="txt_t_c">
+        <p>By createing an account, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms & Conditions.</a></p>
+    </div>
+
+    <input type="submit" value="Create Account" id="create_btn" />
+    <!-- <input id="create_btn" onclick="createData()">Create Account</input> -->
+    </form>
+    
+    
+</div>
+</div>
+    
+</body>
+</html>
+
+<script >
+
+
+let form = document.querySelector('form');
+  form.addEventListener("submit",createData)
+
+function createData(){
+    event.preventDefault();
+ 
+    let fname = form.firstname.value;
+    let lname =form.lastName.value;
+    let pswd = form.password.value;
+   
+    if(fname==="" ||  lname ==="" || pswd ==="")  {
+        alert('Please fill the details')
+    }else{
+
+        let data = {
+            fname,
+            lname,
+            pswd,         
+        }
+      
+        localStorage.setItem('UserData',JSON.stringify(data));
+        console.log("data",data);
+        window.location.href='contect.html';
+    }
+}
+
+</script>
