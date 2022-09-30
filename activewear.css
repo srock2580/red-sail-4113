@@ -1,0 +1,168 @@
+#header{
+    height: 150px;
+    width: 100%;
+}
+#open{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#open >p{
+    font-size: 16px;
+    line-height: 22.4px;
+    text-decoration: none solid rgb(57, 57, 57);
+    color: #393939;
+}
+
+
+
+.para{
+    height: 50px;
+    width: 100%;
+}
+.para>p{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: "Brandon text", Arial, sans-serif;
+    text-align: center;
+
+
+}
+#main{
+    height: 378px;
+    width: 100%;
+    
+}
+
+#main>img{
+
+    height: 100%;
+    width: 100%;
+}
+
+#main>.links{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+#main>.links>a{
+    font-size: 15px;
+    line-height: 21px;
+    font-family: "Brandon text", Arial, sans-serif;
+    color: #000000;
+    
+}
+#main>.links>a:hover{
+
+    border-bottom: 2px solid #393939;
+}
+body>p{
+    font-size: 19px;
+    line-height: 26px;
+    font-weight:700 ;
+    font-family: "Brandon text", Arial, sans-serif;
+margin-top: 60px;
+
+}
+
+
+#pages{
+    height: 30px;
+    width: 100%;
+display: flex;
+justify-content: last baseline;
+align-items: center;
+border-bottom: 1px solid #393939;
+}
+#pages>p{
+    font-size: 15px;
+    line-height: 26px;
+    font-family: "Brandon text", Arial, sans-serif;
+    margin-right: 50px;
+}
+#pages>p:hover{
+    border-bottom: 4px solid #393939;
+    cursor: pointer;
+}
+#count{
+    height: 40px;
+    width:100%;
+}
+
+#clothes_prod{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+
+}
+#clothes_prod>div{
+    padding: 15px;
+}
+#clothes_prod>div>img{
+    height: 70%;
+    width: 100%;
+}
+#clothes_prod>div>button{
+    height: 25px;
+    width: 100px;
+    border: #393939;
+    border-radius: 8px;
+    padding: 5px;
+}
+#clothes_prod>div>button:hover{
+    background-color:rgba(0, 0, 0, 0.611) ;
+    color: aliceblue;
+}
+#clothes_prod>div>p:nth-child(2){
+    font-family: "Brandon text", Arial, sans-serif;
+    font-weight: 700;
+    line-height: 22.4px;
+    font-size: 16px;
+    text-decoration: none solid rgb(57, 57, 57);
+}
+#clothes_prod>div>p:nth-child(3){
+    font-family: "Brandon text", Arial, sans-serif;
+    line-height: 22.4px;
+    font-size: 16px;
+    text-decoration: none solid rgb(57, 57, 57);  
+}
+#clothes_prod>div>p:nth-child(4){
+    font-family: "Brandon text", Arial, sans-serif;
+    font-weight: 700;
+    line-height: 22.4px;
+    font-size: 16px;
+    text-decoration: none solid rgb(57, 57, 57);
+
+}
+
+#pages_no2{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #393939;
+}
+#pages_no2>p{
+    margin-right: 25px;
+    color: #393939;
+    text-decoration: none solid rgb(57, 57, 57);
+    height: 20px;
+    width: 20px;
+   
+    text-align: center;
+
+}
+#pages_no2>p:hover{
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #b7b0b0ec;
+    border-radius: 50%;
+    text-decoration: underline;
+}
