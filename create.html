@@ -74,6 +74,9 @@
        
             
         }
+        #pswd{
+            color: red;
+        }
         
 
         
@@ -119,7 +122,7 @@
 
     <h3>Create password</h3>
     <input type="password" id="password" class="inp" placeholder="Enter Your Password"/>
-
+    <span id="pswd"></span>
     <div id="tickbox">
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
         <label for="vehicle1"> Keep me signed in.  <a href="#">Details</a></label><br>
@@ -155,6 +158,9 @@ function createData(){
    
     if(fname==="" ||  lname ==="" || pswd ==="")  {
         alert('Please fill the details')
+    }
+    if(pswd.length<8){
+        document.getElementById('pswd').innerHTML ="**Please write Password atleast 8 characters in the box"
     }else{
 
         let data = {

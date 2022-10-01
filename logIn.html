@@ -97,6 +97,9 @@
             width: 280px;
             height: 50px;
         }
+        #pswd{
+            color:red
+        }
     </style>
 </head>
 <body>
@@ -121,6 +124,7 @@
         <div >
             <h4 id="mobile_txt">Password <img  id="questionmark" src="https://cdn1.iconfinder.com/data/icons/interface-travel-and-environment/64/mark-interface-question-help-128.png" alt="question_id"></h4>
             <input type="text" id="input_pswd" placeholder="Enter Password"/>
+            <span id="pswd"></span>
         </div>
         <div id="txt_accountLine">
             <p>If you skip this step, you'll miss out on The Nordy Club rewards and other great benefits.</p>
@@ -156,8 +160,12 @@
 
                     console.log(password)
 
+                if(password.length<8){
+                 document.getElementById('pswd').innerHTML ="**Please write Password atleast 8 characters in the box"
+                }    
+
                 if(pasword_data.pswd === password){
-                    window.location.href='homepage.html'
+                    window.location.href='index.html'
                 }else{
                     alert('Please Enter Corret password')
                 }   
@@ -165,6 +173,5 @@
                 }
  
             }
-
      
 </script>
