@@ -1,0 +1,42 @@
+#main {
+  background-color: #f9f9f9;
+  width: 98%;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  /* margin-top: 100%; */
+  /* border: 3px solid blue; */
+  /* margin-top: 100%; */
+}
+
+.card {
+  width: 13%;
+  /* margin: auto; */
+  margin-right: 3%;
+}
+
+#icon {
+  width: 100%;
+  display: flex;
+  margin-top: 15%;
+}
+
+#icon>span {
+  margin: auto;
+}
+
+#ind {
+  border-radius: 50%;
+  margin-right: 3%;
+}
+#last{
+  margin: -8px 0px;
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 2%;
+}
+#last>p{
+  /* margin: auto; */
+  margin-right: 3%;
+  font-size: 13px;
+}

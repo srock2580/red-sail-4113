@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#mid {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1%;
+}
+
+#input {
+  width: 50%;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+#sear {
+  display: flex;
+  border: 1px solid grey;
+  width: 40%;
+  margin: auto;
+
+}
+
+#sear > ion-icon {
+  margin-left: 10px;
+}
+
+#mid>span {
+  margin-right: 3%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+#topDiv {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#topDiv>h4 {
+  color: white;
+  width: 90%;
+  text-align: center;
+}
+
+#topDiv>button {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ind {
+  color: white;
+}
+
+#botDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+hr {
+  width: 98%;
+  margin: auto;
+}
+
+#Nlogo {
+  width: 16%;
+}
+
+#lens {
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.over {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 1%;
+
+}
+
+#main {
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.over>div {
+  width: 20%;
+  margin: auto;
+}
+
+.over>button {
+  width: 5%;
+  height: 5%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 1%;
+}
+
+.over>div>h3,p {
+  cursor: pointer;
+  margin-bottom: 15px;
+  /* display: inline-block; */
+  /* color:black; */
+}
+.over>div>h3,p :hover{
+  cursor: pointer;
+  text-decoration-line: underline;
+
+}
+.signDiv{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

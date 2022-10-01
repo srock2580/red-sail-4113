@@ -1,3 +1,7 @@
+import {navbar} from './component/nav_foot.js'
+document.querySelector('.navbar').innerHTML = navbar()
+
+
 let cont = document.getElementById("ap")
 
 let main = document.getElementById("main")

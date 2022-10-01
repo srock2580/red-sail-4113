@@ -1,124 +1,116 @@
-#header{
-    height: 150px;
-    width: 100%;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#open{
-    height: 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-#open >p{
-    font-size: 16px;
-    line-height: 22.4px;
-    text-decoration: none solid rgb(57, 57, 57);
-    color: #393939;
+#open {
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-body>p{
-    font-size: 19px;
-    line-height: 26px;
-    font-weight:700 ;
-    font-family: "Brandon text", Arial, sans-serif;
-margin-top: 60px;
-
+#open > p {
+    cursor: pointer;
 }
 
-#pages{
-    height: 30px;
-    width: 100%;
-display: flex;
-justify-content: last baseline;
-align-items: center;
-border-bottom: 1px solid #393939;
+.boots-title {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
 }
-#pages>p{
-    font-size: 15px;
-    line-height: 26px;
-    font-family: "Brandon text", Arial, sans-serif;
-    margin-right: 50px;
+
+#pages {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: last baseline;
+  border-bottom: 1px solid #393939;
+  margin-bottom: 20px;
 }
-#pages>p:hover{
+
+#pages > p {
+  margin-right: 30px;
+  padding: 5px 0px;
+  border-bottom: 4px solid white;
+}
+
+#pages > #default-page {
     border-bottom: 4px solid #393939;
-    cursor: pointer;
-}
-#count{
-    height: 40px;
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#products{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-
-}
-#products>div{
-    padding: 15px;
-}
-#products>div>img{
-    height: 70%;
-    width: 100%;
-}
-#products>div>button{
-    height: 25px;
-    width: 100px;
-    border: #393939;
-    border-radius: 8px;
-    padding: 5px;
-}
-#products>div>button:hover{
-    background-color:rgba(0, 0, 0, 0.611) ;
-    color: aliceblue;
-}
-#products>div>p:nth-child(2){
-    font-family: "Brandon text", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 22.4px;
-    font-size: 16px;
-    text-decoration: none solid rgb(57, 57, 57);
-}
-#products>div>p:nth-child(3){
-    font-family: "Brandon text", Arial, sans-serif;
-    line-height: 22.4px;
-    font-size: 16px;
-    text-decoration: none solid rgb(57, 57, 57);  
-}
-#products>div>p:nth-child(4){
-    font-family: "Brandon text", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 22.4px;
-    font-size: 16px;
-    text-decoration: none solid rgb(57, 57, 57);
-
 }
 
-#pages_no{
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #393939;
+#pages > p:hover {
+  border-bottom: 4px solid #393939;
+  cursor: pointer;
 }
-#pages_no>p{
-    margin-right: 25px;
-    color: #393939;
-    text-decoration: none solid rgb(57, 57, 57);
-    height: 20px;
-    width: 20px;
-   
-    text-align: center;
 
+
+#count {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 30px;
 }
-#pages_no>p:hover{
-    cursor: pointer;
-    font-weight: 700;
-    background-color: #b7b0b0ec;
-    border-radius: 50%;
-    text-decoration: underline;
+
+#products {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+#products > div > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#products > div > button {
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(202, 202, 255);
+}
+
+#products > div > button:hover {
+  background-color: rgba(0, 0, 0, 0.611);
+  color: aliceblue;
+}
+
+#products > div > p:nth-child(2) {
+  font-weight: bold;
+}
+#products > div > p:nth-child(3) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#products > div > p:nth-child(4) {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#pages_no {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #393939;
+  margin-bottom: 50px;
+padding-top: 20px;
+padding-bottom: 50px;
+}
+
+#pages_no > p {
+  margin-right: 25px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#pages_no > p:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #b7b0b0ec;
 }

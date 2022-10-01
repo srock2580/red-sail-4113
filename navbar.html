@@ -1,189 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Nordstrom Online & In Store:Shoes, Jwellery,Clothing,Makeup,Dresses
+    </title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAicsdPJDcZp1DvnpaS6zb_1YzjIzlB4qAOQ&usqp=CAU"
+    />
+    <link rel="stylesheet" href="./nav.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nordstrom Online & In Store:Shoes, Jwellery,Clothing,Makeup,Dresses</title>
-    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAicsdPJDcZp1DvnpaS6zb_1YzjIzlB4qAOQ&usqp=CAU">
-    <style>
-        #mid {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        #input {
-            width: 50%;
-            height: 40px;
-            border: none;
-        }
-
-        #sear {
-            display: flex;
-            border: 1px solid grey;
-            width: 40%;
-            margin: auto;
-
-        }
-
-        #mid>span {
-            margin-right: 3%;
-            margin-top: 2%;
-        }
-
-        #topDiv {
-            background-color: black;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #topDiv>h3 {
-            color: white;
-        }
-
-        #ind {
-            color: white;
-            /* margin-top: -15%; */
-            /* margin-left: 2%; */
-        }
-
-        #topDiv>button {
-            background-color: black;
-            display: flex;
-            justify-content: space-between;
-            /* border: 1px solid white; */
-
-        }
-
-        #offer {
-            margin-left: 25%;
-        }
-
-        #botDiv {
-            display: flex;
-            justify-content: space-between;
-            width: 90%;
-            margin-left: 7%;
-        }
-
-        hr {
-            width: 98%;
-            margin: auto;
-        }
-
-        #Nlogo {
-            width: 16%;
-        }
-
-        #lens {
-            margin-top: 2%;
-            margin-right: 2%;
-        }
-
-        .over {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            margin: auto;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-top: 1%;
-
-        }
-
-        #main {
-            /* display: flex; */
-            justify-content: space-between;
-        }
-
-        .over>div {
-            width: 20%;
-            margin: auto;
-            margin-right: 5%;
-        }
-
-        .over>button {
-            width: 5%;
-            height: 5%;
-            border: none;
-            background-color: white;
-            cursor: pointer;
-            margin-top: 1%;
-        }
-
-        .over>div>h3,p {
-            cursor: pointer;
-            /* display: inline-block; */
-            /* color:black; */
-        }
-        .over>div>h3,p :hover{
-            cursor: pointer;
-            text-decoration-line: underline;
-        
-        }
-        .signDiv{
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="topDiv">
-        <h3 id="offer">Get $40 Bonus Note! An exclusive offer for new Nordstrom credit cardmembers.Restrictions apply.
-        </h3>
-        <button><img style="border-radius:50% ;margin-top: 30%; margin-right: 3px;"
-                src="https://n.nordstrommedia.com/alias/IN.gif" alt="">
-            <h3 id="ind">India</h3>
-        </button>
+  <body>
+    <div class="navbar">
+      
     </div>
-    <div id="navCont">
-        <div id="mid">
-            <img id="Nlogo" src="nord_logo.png" alt="">
-            <div id="sear">
-                <ion-icon id="lens" name="search-outline"></ion-icon>
-                <input id="input" type="text" placeholder="Search for products or brands">
-            </div>
-            <span style="cursor:pointer;" id="signIn">Sign In <ion-icon name="chevron-down-outline"></ion-icon></span>
-            <div id="ss"></div>
-            <span>
-                <ion-icon name="storefront-outline"></ion-icon> Stores
-            </span>
-            <span>
-                <ion-icon name="bag-outline"></ion-icon> Purchases
-            </span>
-            <span>
-                <ion-icon name="bag-outline"></ion-icon>
-            </span>
-
-        </div>
-    </div>
-    <hr>
-    <div id="botDiv">
-        <span id="sale" style="color: rgba(255, 0, 0, 0.98);cursor: pointer;">Sale</span>
-        <span style="cursor:pointer;" id="women">Women</span>
-        <span style="cursor:pointer;" id="men">Men</span>
-        <span style="cursor:pointer;" id="kids">Kids</span>
-        <span style="cursor:pointer;" id="young">Young Adults</span>
-        <span style="cursor:pointer;" id="active">Activewear</span>
-        <span style="cursor:pointer;" id="home">Home</span>
-        <span style="cursor:pointer;" id="beauty">Beauty</span>
-        <span style="cursor:pointer;" id="design">Designer</span>
-        <span style="cursor:pointer;" id="gifts">Gifts</span>
-        <span style="cursor:pointer;" id="thread">The Threads</span>
-        <span style="cursor:pointer;" id="brands">Brands</span>
-    </div>
-    <div id="ap">
-        <div id="main">
-            <!-- Append Here -->
-        </div>
-    </div>
-</body>
-
+  </body>
 </html>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="nav.js"></script>
-
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script type="module" src="nav.js"></script>
 
 <!-- 
     .hover-underline-animation {

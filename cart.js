@@ -1,3 +1,7 @@
+import { navbar, footer } from "./component/nav_foot.js";
+document.querySelector(".navbar").innerHTML = navbar();
+document.querySelector(".footer").innerHTML = footer();
+
 const data = JSON.parse(localStorage.getItem("cartStorage")) || [];
 const cartContainer = document.querySelector(".cart-container");
 

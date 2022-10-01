@@ -1,10 +1,14 @@
+import { navbar, footer } from "./component/nav_foot.js";
+document.querySelector(".navbar").innerHTML = navbar();
+document.querySelector(".footer").innerHTML = footer();
+
 let anss=document.querySelector(".first");
 anss.innerHTML=null;
 
 let data={
-    0:'https://n.nordstrommedia.com/id/c02c1b6f-eeb6-4a28-88e4-e3fc3ff2a9e8.jpeg?h=700&w=1608',
-    1:'https://images.unsplash.com/photo-1558171813-4c088753af8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2xvdGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    2:'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFrZSUyMHVwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    0:'https://images.unsplash.com/photo-1513884923967-4b182ef167ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNob3BwaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+    1:'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2hvcHBpbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    2:'https://images.unsplash.com/photo-1576072446584-4955dfe17b86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHNob3BwaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
 
 }
   
@@ -20,15 +24,15 @@ let imgg=document.createElement("img");
     },4000);
 
 
-        let left=document.querySelector(".left1");
-        left.innerHTML=null;
+        // let left=document.querySelector(".left1");
+        // left.innerHTML=null;
 
-        let data2={
-            0:'https://n.nordstrommedia.com/id/d3b10906-7d01-47f3-adc2-2098e4ac6600.jpeg?h=700&w=1608',
-            1:'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        // let data2={
+        //     0:'https://n.nordstrommedia.com/id/d3b10906-7d01-47f3-adc2-2098e4ac6600.jpeg?h=700&w=1608',
+        //     1:'https://images.unsplash.com/photo-1483181957632-8bda974cbc91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHNob3BwaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
 
             
-        }
+        // }
 
         let img=document.createElement("img");
  let i=0;
