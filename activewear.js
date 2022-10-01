@@ -1,7 +1,3 @@
-import { navbar, footer } from "./component/nav_foot.js";
-document.querySelector(".navbar").innerHTML = navbar();
-document.querySelector(".footer").innerHTML = footer();
-
 let d3 = [
   {
     imageLink:

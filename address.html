@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Address</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAicsdPJDcZp1DvnpaS6zb_1YzjIzlB4qAOQ&usqp=CAU"
+    />
     <link rel="stylesheet" href="./address.css" />
+    
   </head>
   <body>
     <!-- nav sec -->
@@ -177,6 +183,17 @@
       document.querySelector(".right-button").addEventListener("click", () => {
         window.location.href = "checkout.html";
       });
+
+      const cartAmount = localStorage.getItem('totalAmount')
+      const itemsAmount = cartAmount
+      const shippingAmount = Math.floor((cartAmount * 5) / 100)
+      const taxesAmount = Math.floor((cartAmount * 3) / 100)
+      const totalAmount = Number(itemsAmount) + Number(shippingAmount) + Number(taxesAmount)
+
+      document.querySelector('.items-amount').innerText = itemsAmount
+      document.querySelector('.shipping-amount').innerText = shippingAmount
+      document.querySelector('.taxes-amount').innerText = taxesAmount
+      document.querySelector('.total-amount').innerText = totalAmount
     </script>
   </body>
 </html>

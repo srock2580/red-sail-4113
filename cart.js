@@ -1,6 +1,5 @@
-import { navbar, footer } from "./component/nav_foot.js";
-document.querySelector(".navbar").innerHTML = navbar();
-document.querySelector(".footer").innerHTML = footer();
+
+
 
 const data = JSON.parse(localStorage.getItem("cartStorage")) || [];
 const cartContainer = document.querySelector(".cart-container");
@@ -51,7 +50,7 @@ const getLocalData = () => {
       data.splice(index, 1);
       localStorage.setItem("cartStorage", JSON.stringify(data));
       getLocalData();
-      updateTotal(0)
+      updateTotal(0);
     });
 
     // change on quantity
@@ -60,7 +59,7 @@ const getLocalData = () => {
       const fullPrice = qnt * Math.floor(element.price);
       priceTag.innerText = "Rs. " + Math.floor(fullPrice) + " /-";
 
-      updateTotal(Math.floor(fullPrice) - Math.floor(element.price))
+      updateTotal(Math.floor(fullPrice) - Math.floor(element.price));
     });
 
     selectTag.append(
@@ -88,19 +87,21 @@ const getLocalData = () => {
 };
 getLocalData();
 
-
 function updateTotal(fullPrice) {
-  let total = 0
-  data.forEach(element => {
-    total += Math.floor(element.price)
+  let total = 0;
+  data.forEach((element) => {
+    total += Math.floor(element.price);
   });
 
-  total += Math.floor(fullPrice)
+  total += Math.floor(fullPrice);
 
-  document.querySelector('.total_amount').innerText = "Rs. " + Math.floor(total) + " /-";
+  document.querySelector(".total_amount").innerText =
+    "Rs. " + Math.floor(total) + " /-";
+
+    localStorage.setItem('totalAmount', total)
 }
-updateTotal(0)
+updateTotal(0);
 
-document.querySelector('.checkout_button').addEventListener('click', () => {
-  window.location.href = 'address.html'
-})
+document.querySelector(".checkout_button").addEventListener("click", () => {
+  window.location.href = "address.html";
+});

@@ -18,7 +18,7 @@ function navbar() {
 </div>
 <div id="navCont">
   <div id="mid">
-    <img id="Nlogo" src="nord_logo.png" alt="" />
+    <img id="Nlogo" src="nord_logo.png" alt=""  />
     <div id="sear">
       <ion-icon id="lens" name="search-outline"></ion-icon>
       <input
@@ -28,13 +28,12 @@ function navbar() {
       />
     </div>
     <span style="cursor: pointer" id="signIn"
-      >Sign In <ion-icon name="chevron-down-outline"></ion-icon
-    ></span>
+      >Sign In</span>
     <div id="ss"></div>
     <span> <ion-icon name="storefront-outline"></ion-icon> Stores </span>
     <span> <ion-icon name="bag-outline"></ion-icon> Purchases </span>
-    <span>
-      <a href="cart.html"><ion-icon name="bag-outline"></ion-icon></a>
+    <span id="cart_link">
+      <ion-icon name="bag-outline"></ion-icon>
     </span>
   </div>
 </div>
@@ -61,6 +60,42 @@ function navbar() {
   </div>
 </div>`;
 }
+
+
+function clickLogo() {
+  document.querySelector('#Nlogo').addEventListener('click', () => {
+    window.location.href = 'index.html'
+  })
+}
+
+function clickSignup() {
+  document.querySelector('#signIn').addEventListener('click', () => {
+    window.location.href = 'signup.html'
+  })
+}
+
+function clickCart() {
+  document.querySelector('#cart_link').addEventListener('click', () => {
+    window.location.href = 'cart.html'
+  })
+}
+
+let setId
+function clickSearch() {
+  document.querySelector('#input').addEventListener('input', () => {
+    const searchVal = document.querySelector('#input').value
+
+    clearTimeout(setId)
+    
+    setId = setTimeout(() => {
+      if (searchVal !== '') {
+        localStorage.setItem('searchVal', searchVal)
+        window.location.href = 'search.html'
+      }
+    }, 1500)
+  })
+}
+
 
 
 
@@ -139,7 +174,7 @@ function footer() {
   <p>Terms & Conditions</p>
   <p>Interest-Based Ads</p>
   <p> ©2022 Nordstrom, Inc.</p>
-</div>`
+</div>`;
 }
 
-export { navbar, footer };
+export { navbar, footer, clickLogo, clickSignup, clickCart, clickSearch };

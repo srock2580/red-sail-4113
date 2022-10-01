@@ -1,6 +1,4 @@
-import { navbar, footer } from "./component/nav_foot.js";
-document.querySelector(".navbar").innerHTML = navbar();
-document.querySelector(".footer").innerHTML = footer();
+
 
 let anss=document.querySelector(".first");
 anss.innerHTML=null;
@@ -14,14 +12,18 @@ let data={
   
 let imgg=document.createElement("img");
  let j=0;
+ imgg.src=data[j];
+ anss.append(imgg);
  setInterval(function (){
+    j++;
      if(j==3){
          j=0;
      }
+     
      imgg.src=data[j];
      anss.append(imgg);
-     j++;
-    },4000);
+     
+    },2000);
 
 
         // let left=document.querySelector(".left1");
@@ -34,16 +36,16 @@ let imgg=document.createElement("img");
             
         // }
 
-        let img=document.createElement("img");
- let i=0;
- setInterval(function (){
-     if(i==2){
-         i=0;
-     }
-     img.src=data2[i];
-     left.append(img);
-     i++;
-    },4000);
+//         let img=document.createElement("img");
+//  let i=0;
+//  setInterval(function (){
+//      if(i==2){
+//          i=0;
+//      }
+//      img.src=data2[i];
+//      left.append(img);
+//      i++;
+//     },4000);
 
 
 
@@ -152,7 +154,7 @@ let imgg=document.createElement("img");
             let price=document.createElement("p");
             price.innerText=el.price;
             price.style.fontWeight="700"
-            discount=document.createElement("p");
+            let discount=document.createElement("p");
             discount.innerText=el.discount;
            
 

@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nordstrom - Signup</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAicsdPJDcZp1DvnpaS6zb_1YzjIzlB4qAOQ&usqp=CAU"
+    />
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./footer.css" />
     <style>
          *{
             font-family: Brandon Text,Arial,sans-serif;
-             font-weight: 200;
-             line-height: 1;
-             color: rgb(83, 82, 82);
         }
-      #container{
+      #page-container{
         text-align: center;
-        margin-top: 200px;
+        margin-top: 50px;
       }
       input{
         width: 350px;
@@ -37,6 +41,7 @@
         background-color: black;
         color: white;
         margin-top: 20px;
+        margin-bottom: 50px;
       }
       #p_text{
         margin-left:-150px ;
@@ -54,8 +59,8 @@
 
 </head>
 <body>
-
-    <div id="container">
+    <div class="navbar"></div>
+    <div id="page-container">
      
     <div id="navbar"></div>
 
@@ -74,7 +79,7 @@
     </div>
     <div id="email_already"></div>
 
-    
+    <div class="footer"></div>
 </body>
 </html>
 
@@ -105,3 +110,12 @@ window.location.href='create.html'
 }
 
 </script>
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script type="module" src="nav.js"></script>
